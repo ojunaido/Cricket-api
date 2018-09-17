@@ -1,6 +1,6 @@
 
     $.ajax({
-    url:"http://cricapi.com/api/matches?apikey=XYduQCdXDmRmszfo8WhJZqCvg1A3",
+    url:"https://cricapi.com/api/matches?apikey=XYduQCdXDmRmszfo8WhJZqCvg1A3",
     success:function(data){
         console.log(data.matches[1]["team-1"]);
         for(i=0;i<5;i++){
@@ -26,7 +26,7 @@
 function getPid(){
     let playerPid = document.querySelector(".pid-button").value;
     $.ajax({
-    url:`http://cricapi.com/api/playerFinder?apikey=XYduQCdXDmRmszfo8WhJZqCvg1A3&name=${playerPid}`,
+    url:`https://cricapi.com/api/playerFinder?apikey=XYduQCdXDmRmszfo8WhJZqCvg1A3&name=${playerPid}`,
     success:function(data){
         console.log(data.data[0].fullName);
         document.querySelector(".pid").innerHTML = "";
