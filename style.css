@@ -52,6 +52,7 @@ body{
   box-shadow: 0 5px #666;
 }
 .heading{
+    text-align: center;
     display: flex;
     justify-content: center;  
     margin-top: 32px;
@@ -71,7 +72,7 @@ body{
     box-shadow: 10px 10px 0px -3px rgba(43,122,119,1);
     color: white;
     display: flex;
-    min-width: 400px;
+    min-width: 260px;
     height: 300px;
     flex: 1;
     align-items: center;
@@ -83,11 +84,12 @@ body{
     padding: 2px;
     
 }
+
 .s-box>.news-box{
     box-shadow: 10px 10px 0px -3px rgba(43,122,119,1);
     color: white;
     display: flex;
-    min-width: 400px;
+    min-width: 260px;
     flex: 1;
     align-items: center;
     flex-direction: column;
@@ -96,6 +98,9 @@ body{
     background-color: #3aafa9;
     padding: 2px;
     
+}
+.news-box>h2{
+    font-size: 1.7rem;
 }
 .b-box{
     display: flex;
@@ -118,9 +123,12 @@ body{
 .s-container{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .s-container>div{
     margin: 12px;
+    display: flex;
+    flex-direction: column;
 }
 .pid{
     display: flex;
