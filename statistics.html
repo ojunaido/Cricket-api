@@ -1,0 +1,113 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script>
+        <script src="js/stats.js"></script>
+        <title>Document</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse main-nav" id="navbarTogglerDemo02">
+            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Players Statistics<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+            </ul>
+            </div>
+        </nav>
+        <div class="s-container">
+                <div class="get-stats">
+                <input  type="number" class="player-stats">
+                <button class="btn-search" onclick="getStats()">Get Statistics</button>
+                </div>
+                <div class="get-id">
+                    <input type="text" class="pid-button" >
+                    <button onclick="getPid()" class="btn-search">Find PID</button>
+                </div>
+            </div>
+            <div class="pid">  
+            </div>
+            <div class="p-stats">
+                <div class="pic">
+                    <img class="p-pic" src="" alt="picture">
+                </div>
+                <div class="p-name">
+                    <h3 class="names"></h3>
+                    <h6><span class="red">Date of Birth:</span> <span class="dob"></span></h6>
+                    <h6><span class="red">Batting Style:</span> <span class="bat-s"></span></h6>
+                    <h6><span class="red">Bowling Style:</span> <span class="ball-s"></span></h6>
+                </div>
+                <div class="description">
+                <p class="p-description">
+                </p>
+                </div>
+                <div class="stat-charts">
+                    
+                        <div class="list-a">
+                            <h4>ListA</h4>
+                            <div>
+                            <h5>Bowling</h5>
+                            <canvas id="bat-chart-0"></canvas>
+                        </div>
+                        <div>
+                            <h5>Batting</h5>
+                            <canvas id="bowl-chart-0"></canvas>
+                        </div>
+                        </div>
+                        <div class="first-class">
+                        <h4>First Class</h4>
+                        <div>
+                            <h5>Bowling</h5>
+                            <canvas id="bat-chart-1"></canvas>
+                        </div>
+                        <div>
+                            <h5>Batting</h5>
+                            <canvas id="bowl-chart-1"></canvas>
+                        </div>
+                        </div>
+                        <div class="t20">
+                        <h4>T20s</h4>
+                        <div>
+                            <h5>Bowling</h5>
+                            <canvas id="bat-chart-2"></canvas>
+                        </div>
+                        <div>
+                            <h5>Batting</h5>
+                            <canvas id="bowl-chart-2"></canvas>
+                        </div>
+                        </div>
+                        <div class="odi">
+                        <h4>ODI's</h4>
+                        <div>
+                            <h5>Bowling</h5>
+                            <canvas id="bat-chart-3"></canvas>
+                        </div>
+                        <div>
+                            <h5>Batting</h5>
+                            <canvas id="bowl-chart-3"></canvas>
+                        </div>
+                        </div>
+                        <script src="js/chart.js"></script>
+                </div>
+            </div>
+            
+    </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    </html>

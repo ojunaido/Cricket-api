@@ -142,3 +142,80 @@ hr{
   border-radius: 4px;
   
 }
+.p-stats{
+    display: none;
+    align-items: center;
+    flex-direction: column;
+}
+.pic{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 200px;
+    border: 2px solid grey;
+}
+img{
+    width: 100%;
+}
+.description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.stat-charts{
+    padding: 32px; 
+
+}
+.stat-charts>div{
+    box-shadow: 10px 10px 0px -3px rgba(43,122,119,1);
+    background-color: #3aafa9;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 12px;
+}
+.stat-charts>div>*{
+    min-width: 400px;
+    max-width: 700px;
+    
+}
+.batting,.bowling{
+    display: flex;
+    justify-content: center;
+}
+.stat-charts h5,h4{
+    display: flex;
+    justify-content: center;
+}
+.stat-charts h4{
+    width: 100%;
+}
+.p-name{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.red{
+    background-color: #c4798f;
+}
+.news{
+    display: flex;
+    border: 2px solid black;
+    height: 200px;
+    min-width: 200px;
+}
+.news-area{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.n1,.n3,n6{
+    flex: 2;
+}
+.n7,n5,.n9,n10{
+    flex:1;
+}
+.n4,n2,n8{
+    flex: 3;
+}
