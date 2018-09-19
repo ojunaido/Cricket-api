@@ -9,7 +9,7 @@ function getNews(){
                 `
                 <div class="news n${i}" ${animate[i]} style="background-image: url(${data.articles[i].urlToImage})">
                 <div class="n-tint">
-                <h3>${data.articles[i].title}</h3>
+                <h4>${data.articles[i].title}</h4>
                 <a href="${data.articles[i].url}"><button class="n-btn">Read More</button></a>
                 </div>
                     </div>

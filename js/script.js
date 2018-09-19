@@ -29,7 +29,7 @@
             console.log(data)
     for(i=0;i<8;i++){
         document.querySelector(".s-box").innerHTML += 
-        `<div class="news-box" ${animate[i-5]}>
+        `<div class="news-box" ${animate[i]}>
         <h2>${data.data[i].name}</h2>
         <h4>${data.data[i].date}</h4>
       </div>`

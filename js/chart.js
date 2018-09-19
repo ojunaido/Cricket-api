@@ -41,10 +41,10 @@ $.ajax({
                     var myChart = new Chart(ctx, {
                         type: 'pie',
                         data: {
-                            labels: ["Runs", "Matches", "Inninings", "Half Centuries", "Centuries"],
+                            labels: ["Runs", "Matches", "Inninings","Centuries"],
                             datasets: [{
                                 label: '# of Votes',
-                                data: [batting[i].Runs, batting[i].Mat, batting[i].Inns, batting[i]["50"], batting[i]["100"]],
+                                data: [batting[i].Runs, batting[i].Mat, batting[i].Inns, batting[i]["100"]],
                                 backgroundColor: [
                                     'rgba(255, 99, 132, 0.7)',
                                     'rgba(54, 162, 235, 0.7)',
