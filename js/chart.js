@@ -1,7 +1,7 @@
 function getStats(){
     let inputPID = document.querySelector(".player-stats").value;
 $.ajax({
-    url:`http://cricapi.com/api/playerStats?apikey=CdEzfLBSkHZ3nXRpB6iPbvMmOwG3&pid=${inputPID}`,
+    url:`https://cricapi.com/api/playerStats?apikey=CdEzfLBSkHZ3nXRpB6iPbvMmOwG3&pid=${inputPID}`,
     success: function(data){
         document.querySelector(".pid").innerHTML = "";
         console.log(data)
@@ -83,7 +83,7 @@ $.ajax({
     function getPid(){
         let playerPid = document.querySelector(".pid-button").value;
         $.ajax({
-        url:`http://cricapi.com/api/playerFinder?apikey=XYduQCdXDmRmszfo8WhJZqCvg1A3&name=${playerPid}`,
+        url:`https://cricapi.com/api/playerFinder?apikey=XYduQCdXDmRmszfo8WhJZqCvg1A3&name=${playerPid}`,
         success:function(data){
             document.querySelector(".p-stats").style.display = "none";
             console.log(data.data[0].fullName);
