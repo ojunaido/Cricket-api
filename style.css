@@ -2,6 +2,40 @@ body{
     background-color: #34a29d;
     background-size: cover;
     background-position: center;
+    font-family: 'Righteous';
+}
+.main-container{
+    display: none;
+}
+.welcome{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.welcome-text{
+    position: relative;
+    text-align: center;
+}
+.welcome-text>h1{
+    font-size: 82px;
+}
+.welcome-btn{
+    border:none;
+    margin-top: 12px;
+    padding: 12px;
+    border-radius: 8px;
+    transition:1s;
+}
+.welcome-btn:hover{
+    background-color: #212529;
+    color: white;
+}
+#particles-js>canvas{
+    position: absolute;
+    top: 0px;
+    right: 0px;
 }
 html, body {
     max-width: 100%;
@@ -9,7 +43,6 @@ html, body {
 }
 .autoplay{
     width: 100%;
-    display: flex;
     
 }
 .color-tint{
@@ -273,6 +306,9 @@ img{
         max-width: 700px;
         
     }
+    .welcome-text>h1{
+        font-size: 72px;
+    }
 }
 @media only screen and (max-width: 380px) {
     .stat-charts>div>*{
@@ -281,6 +317,9 @@ img{
         max-width: 700px;
         
     }
+    .welcome-text>h1{
+        font-size: 62px;
+    }
 }
 @media only screen and (max-width: 350px) {
     .stat-charts>div>*{
@@ -288,5 +327,8 @@ img{
         width: 220px;
         max-width: 700px;
         
+    }
+    .welcome-text>h1{
+        font-size: 52px;
     }
 }
