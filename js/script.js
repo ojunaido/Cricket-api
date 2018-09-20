@@ -13,7 +13,7 @@
                 winner = "To Be decided";
             }
             document.querySelector(".b-box").innerHTML += 
-            `<div class="news-box n-${i}" ${animate[i]}>
+            `<div class="news-box n-${i}">
             <h2><span class="team">${data.matches[i]["team-1"]}</span> vs <span class="team">${data.matches[i]["team-2"]}</span></h2>
             <h6><span class="type">${data.matches[i].type}</span></h6>
             <h5>Toss Winning Team: ${data.matches[i].toss_winner_team}</h5>
@@ -29,18 +29,18 @@
             console.log(data)
     for(i=0;i<9;i++){
         document.querySelector(".s-box").innerHTML += 
-        `<div class="news-box" ${animate[i]}>
+        `<div class="news-box">
         <h2>${data.data[i].name}</h2>
         <h4>${data.data[i].date}</h4>
       </div>`
     }
   }
 })
-
-
-
 function switchToHome(){
-    document.querySelector(".main-container").style.display = "block";
-    document.querySelector(".welcome").style.display = "none";
+    document.querySelector(".welcome").style.display = "none";    
+    document.querySelector(".main-container").style.visibility = "visible";
 }
-  
+
+
+
+

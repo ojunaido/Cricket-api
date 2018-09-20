@@ -1,0 +1,339 @@
+body{
+    background-color: #34a29d;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Righteous';
+}
+.main-container{
+    visibility: hidden;
+    flex-direction: column;
+}
+.welcome{
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.welcome-text{
+    position: relative;
+    text-align: center;
+}
+.welcome-text>h1{
+    font-size: 82px;
+}
+.welcome-btn{
+    border:none;
+    margin-top: 12px;
+    padding: 12px;
+    border-radius: 8px;
+    transition:1s;
+}
+.welcome-btn:hover{
+    background-color: #212529;
+    color: white;
+}
+#particles-js>canvas{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+.autoplay{
+    width: 85%;
+    
+}
+.color-tint{
+    background-color: rgba(52, 162, 157, 0.47);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.autoplay h1{
+    text-align: center;
+    color: white;
+}
+.slick-track{
+    display: flex;
+    justify-content: center;
+}
+.main-nav{
+    display: flex;
+    margin-left: auto!important;
+}
+.hero-section{
+ background-image: url(../img/background.jpg);
+ height: 100vh;
+}
+.hero-btn{
+  margin-top: 56px;
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+.hero-btn:hover {background-color: #3e8e41}
+
+.hero-btn:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+}
+.heading{
+    text-align: center;
+    display: flex;
+    justify-content: center;  
+    margin-top: 32px;
+    color: white;
+}
+.g-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.recent-matches{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+}
+.b-box>.news-box{
+    box-shadow: 10px 10px 0px -3px rgba(43,122,119,1);
+    color: white;
+    display: flex;
+    min-width: 260px;
+    height: 300px;
+    flex: 1;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin: 8px;
+    background-color: #3aafa9;
+    padding: 2px;
+    
+}
+
+.s-box>.news-box{
+    box-shadow: 10px 10px 0px -3px rgba(43,122,119,1);
+    color: white;
+    display: flex;
+    min-width: 260px;
+    flex: 1;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 8px;
+    background-color: #3aafa9;
+    padding: 2px;
+    
+}
+.news-box>h2{
+    font-size: 1.7rem;
+}
+.b-box{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.s-box{
+    
+    display: flex;
+    flex-wrap: wrap;
+}
+.b-box>.n-0,.n-3{
+    flex: 2;
+}
+.type{
+    background-color: #0c403e;
+    border-radius: 12px;
+    padding: 6px;
+}
+.s-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.s-container>div{
+    margin: 12px;
+    display: flex;
+    flex-direction: column;
+}
+.pid{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+hr{
+    width: 80%;
+}
+.btn-search{
+  padding: 4px 4px;
+  font-size: 18px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 4px;
+  
+}
+.p-stats{
+    display: none;
+    align-items: center;
+    flex-direction: column;
+}
+.pic{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 200px;
+    border: 2px solid grey;
+}
+img{
+    width: 100%;
+}
+.description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+.stat-charts{
+    padding: 32px; 
+
+}
+.stat-charts>div{
+    box-shadow: 10px 10px 0px -3px rgba(43,122,119,1);
+    background-color: #3aafa9;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 12px;
+}
+.stat-charts h4{
+    background-color: #308e8a;
+}
+.stat-charts>div>*{
+    min-width: 360px;
+    max-width: 700px;
+
+    
+}
+.batting,.bowling{
+    display: flex;
+    justify-content: center;
+}
+.stat-charts h5,h4{
+    display: flex;
+    justify-content: center;
+}
+.stat-charts h4{
+    width: 100%;
+}
+.p-name{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.red{
+    background-color: #c4798f;
+}
+.news{
+    display: flex;
+    height: 200px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    min-width: 260px;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 10px 10px 0px -3px rgba(43,122,119,1);
+    margin: 8px;
+}
+.n-tint{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(52, 162, 157, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.news-area{
+  
+    display: flex;
+    flex-wrap: wrap;
+}
+.n-btn{
+    padding: 8px;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+}
+.n0,.n3,.n7,.n9{
+    flex: 1;
+}
+.n2,.n6,.n4{
+    flex: 2;
+}
+
+.n5,.n8,.n1,.n10{
+ flex: 3;
+}
+.n-heading{
+    text-align: center;
+    margin: 32px;
+    color: white;
+
+}
+@media only screen and (max-width: 450px) {
+    .stat-charts>div>*{
+        min-width: 300px;
+        width: 300px;
+        max-width: 700px;
+        
+    }
+    .welcome-text>h1{
+        font-size: 72px;
+    }
+}
+@media only screen and (max-width: 380px) {
+    .stat-charts>div>*{
+        min-width: 260px;
+        width: 260px;
+        max-width: 700px;
+        
+    }
+    .welcome-text>h1{
+        font-size: 62px;
+    }
+}
+@media only screen and (max-width: 350px) {
+    .stat-charts>div>*{
+        min-width: 220px;
+        width: 220px;
+        max-width: 700px;
+        
+    }
+    .welcome-text>h1{
+        font-size: 52px;
+    }
+}
