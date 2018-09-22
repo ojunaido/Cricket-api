@@ -1,51 +1,73 @@
-body{
+body {
     background-color: #34a29d;
     background-size: cover;
     background-position: center;
     font-family: 'Righteous';
 }
-.main-container{
-    visibility: hidden;
+
+.main-container {
     flex-direction: column;
 }
-.welcome{
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container>h1 {
+    text-align: center;
+    margin: 12px;
+}
+
+.welcome {
     height: 100vh;
     justify-content: center;
     align-items: center;
     display: flex;
 }
-.welcome-text{
+
+.welcome-text {
     position: relative;
     text-align: center;
 }
-.welcome-text>h1{
+
+.welcome-text>h1 {
     font-size: 82px;
 }
-.welcome-btn{
-    border:none;
+
+.welcome-btn,
+.load-more {
+    border: none;
     margin-top: 12px;
     padding: 12px;
     border-radius: 8px;
-    transition:1s;
+    transition: 1s;
 }
-.welcome-btn:hover{
+
+.welcome-btn:hover {
     background-color: #212529;
     color: white;
 }
-#particles-js>canvas{
+
+#particles-js>canvas {
     position: absolute;
     top: 0px;
     right: 0px;
 }
-html, body {
+
+html,
+body {
     max-width: 100%;
     overflow-x: hidden;
 }
-.autoplay{
+
+.autoplay {
     width: 85%;
-    
 }
-.color-tint{
+
+.color-tint {
     background-color: rgba(52, 162, 157, 0.47);
     height: 100vh;
     display: flex;
@@ -53,60 +75,72 @@ html, body {
     align-items: center;
     flex-direction: column;
 }
-.autoplay h1{
+
+.autoplay h1 {
     text-align: center;
     color: white;
 }
-.slick-track{
+
+.slick-track {
     display: flex;
     justify-content: center;
 }
-.main-nav{
+
+.main-nav {
     display: flex;
     margin-left: auto!important;
 }
-.hero-section{
- background-image: url(../img/background.jpg);
- height: 100vh;
+
+.hero-section {
+    background-image: url(../img/background.jpg);
+    height: 100vh;
 }
-.hero-btn{
-  margin-top: 56px;
-  padding: 15px 25px;
-  font-size: 24px;
-  text-align: center;
-  cursor: pointer;
-  outline: none;
-  color: #fff;
-  background-color: #4CAF50;
-  border: none;
-  border-radius: 15px;
-  box-shadow: 0 9px #999;
+
+.hero-btn {
+    margin-top: 56px;
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
 }
-.hero-btn:hover {background-color: #3e8e41}
+
+.hero-btn:hover {
+    background-color: #3e8e41
+}
 
 .hero-btn:active {
-  background-color: #3e8e41;
-  box-shadow: 0 5px #666;
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
 }
-.heading{
+
+.heading {
     text-align: center;
     display: flex;
-    justify-content: center;  
+    justify-content: center;
     margin-top: 32px;
     color: white;
 }
-.g-container{
+
+.g-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
-.recent-matches{
+
+.recent-matches {
     width: 95%;
     display: flex;
     flex-direction: column;
 }
-.b-box>.news-box{
-    box-shadow: 10px 10px 0px -3px rgba(43,122,119,1);
+
+.b-box>.news-box {
+    box-shadow: 10px 10px 0px -3px rgba(43, 122, 119, 1);
     color: white;
     display: flex;
     min-width: 260px;
@@ -119,11 +153,10 @@ html, body {
     margin: 8px;
     background-color: #3aafa9;
     padding: 2px;
-    
 }
 
-.s-box>.news-box{
-    box-shadow: 10px 10px 0px -3px rgba(43,122,119,1);
+.s-box>.news-box {
+    box-shadow: 10px 10px 0px -3px rgba(43, 122, 119, 1);
     color: white;
     display: flex;
     min-width: 260px;
@@ -134,122 +167,146 @@ html, body {
     margin: 8px;
     background-color: #3aafa9;
     padding: 2px;
-    
 }
-.news-box>h2{
+
+.news-box>h2 {
     font-size: 1.7rem;
 }
-.b-box{
-    display: flex;
-    flex-wrap: wrap;
-    
-}
-.s-box{
-    
+
+.b-box {
     display: flex;
     flex-wrap: wrap;
 }
-.b-box>.n-0,.n-3{
+
+.s-box {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.b-box>.n-0,
+.n-3 {
     flex: 2;
 }
-.type{
+
+.type {
     background-color: #0c403e;
     border-radius: 12px;
     padding: 6px;
 }
-.s-container{
+
+.s-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
-.s-container>div{
+
+.s-container>div {
     margin: 12px;
     display: flex;
     flex-direction: column;
 }
-.pid{
+
+.pid {
     display: flex;
     align-items: center;
     flex-direction: column;
 }
-hr{
+
+.pid>h1 {
+    text-align: center;
+    margin-top: 100px;
+}
+
+hr {
     width: 80%;
 }
-.btn-search{
-  padding: 4px 4px;
-  font-size: 18px;
-  text-align: center;
-  cursor: pointer;
-  outline: none;
-  color: #fff;
-  background-color: #4CAF50;
-  border: none;
-  border-radius: 4px;
-  
+
+.btn-search {
+    padding: 4px 4px;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 4px;
 }
-.p-stats{
+
+.p-stats {
     display: none;
     align-items: center;
     flex-direction: column;
 }
-.pic{
+
+.pic {
     align-items: center;
     justify-content: center;
     display: flex;
     width: 200px;
     border: 2px solid grey;
 }
-img{
+
+img {
     width: 100%;
 }
-.description{
+
+.description {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-
 }
-.stat-charts{
-    padding: 32px; 
 
+.stat-charts {
+    padding: 32px;
 }
-.stat-charts>div{
-    box-shadow: 10px 10px 0px -3px rgba(43,122,119,1);
+
+.stat-charts>div {
+    box-shadow: 10px 10px 0px -3px rgba(43, 122, 119, 1);
     background-color: #3aafa9;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     margin: 12px;
 }
-.stat-charts h4{
+
+.stat-charts h4 {
     background-color: #308e8a;
 }
-.stat-charts>div>*{
+
+.stat-charts>div>div {
     min-width: 360px;
     max-width: 700px;
+}
 
-    
-}
-.batting,.bowling{
+.batting,
+.bowling {
     display: flex;
     justify-content: center;
 }
-.stat-charts h5,h4{
+
+.stat-charts h5,
+h4 {
     display: flex;
     justify-content: center;
 }
-.stat-charts h4{
+
+.stat-charts h4 {
     width: 100%;
 }
-.p-name{
+
+.p-name {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.red{
+
+.red {
     background-color: #c4798f;
 }
-.news{
+
+.news {
     display: flex;
     height: 200px;
     flex-direction: column;
@@ -259,10 +316,11 @@ img{
     min-width: 260px;
     background-size: cover;
     background-position: center;
-    box-shadow: 10px 10px 0px -3px rgba(43,122,119,1);
+    box-shadow: 10px 10px 0px -3px rgba(43, 122, 119, 1);
     margin: 8px;
 }
-.n-tint{
+
+.n-tint {
     height: 100%;
     width: 100%;
     background-color: rgba(52, 162, 157, 0.5);
@@ -272,12 +330,13 @@ img{
     align-items: center;
     color: white;
 }
-.news-area{
-  
+
+.news-area {
     display: flex;
     flex-wrap: wrap;
 }
-.n-btn{
+
+.n-btn {
     padding: 8px;
     font-size: 16px;
     text-align: center;
@@ -288,52 +347,187 @@ img{
     border: none;
     border-radius: 15px;
 }
-.n0,.n3,.n7,.n9{
+
+.n0,
+.n3,
+.n7,
+.n9 {
     flex: 1;
 }
-.n2,.n6,.n4{
+
+.n2,
+.n6,
+.n4 {
     flex: 2;
 }
 
-.n5,.n8,.n1,.n10{
- flex: 3;
+.n5,
+.n8,
+.n1,
+.n10 {
+    flex: 3;
 }
-.n-heading{
+
+.n-heading {
     text-align: center;
     margin: 32px;
     color: white;
-
 }
+
+.s-date {
+    margin-top: 12px
+}
+
+.load-more {
+    margin-bottom: 8px;
+    width: 200px;
+    justify-content: center;
+    display: flex;
+}
+
 @media only screen and (max-width: 450px) {
-    .stat-charts>div>*{
+    .stat-charts>div>* {
         min-width: 300px;
         width: 300px;
         max-width: 700px;
-        
     }
-    .welcome-text>h1{
+    .welcome-text>h1 {
         font-size: 72px;
     }
 }
+
 @media only screen and (max-width: 380px) {
-    .stat-charts>div>*{
+    .stat-charts>div>* {
         min-width: 260px;
         width: 260px;
         max-width: 700px;
-        
     }
-    .welcome-text>h1{
+    .welcome-text>h1 {
         font-size: 62px;
     }
 }
+
 @media only screen and (max-width: 350px) {
-    .stat-charts>div>*{
+    .stat-charts>div>* {
         min-width: 220px;
         width: 220px;
         max-width: 700px;
-        
     }
-    .welcome-text>h1{
+    .welcome-text>h1 {
         font-size: 52px;
+    }
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: white;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #555;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.active {
+    color: white;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: black;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.topnav a:hover,
+.dropdown:hover .dropbtn {
+    background-color: white;
+    color: black;
+}
+
+.nav-logo {
+    margin-right: auto;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child),
+    .dropdown .dropbtn {
+        display: none;
+    }
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .topnav.responsive {
+        position: relative;
+    }
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .topnav.responsive .dropdown {
+        float: none;
+    }
+    .topnav.responsive .dropdown-content {
+        position: relative;
+    }
+    .topnav.responsive .dropdown .dropbtn {
+        display: block;
+        width: 100%;
+        text-align: left;
     }
 }

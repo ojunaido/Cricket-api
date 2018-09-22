@@ -10,11 +10,19 @@ function getNews(){
                 <div class="news n${i}" ${animate[i]} style="background-image: url(${data.articles[i].urlToImage})">
                 <div class="n-tint">
                 <h4>${data.articles[i].title}</h4>
-                <a href="${data.articles[i].url}"><button class="n-btn">Read More</button></a>
+                <a href="${data.articles[i].url}" target="_blank"><button class="n-btn">Read More</button></a>
                 </div>
                     </div>
                  `
             }
         }
     })
+}
+function navBar() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
 }
